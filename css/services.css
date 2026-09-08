@@ -1,0 +1,423 @@
+/* =========================
+   Services Page
+========================== */
+
+/* =========================
+   Services Hero
+========================== */
+
+.page-hero {
+  padding: 9rem 1.25rem 6rem;
+  text-align: center;
+  background:
+    linear-gradient(rgba(15, 15, 15, 0.82), rgba(15, 15, 15, 0.9)),
+    url("../images/hero/hero-optimized.webp") center / cover no-repeat;
+}
+
+.page-hero-inner {
+  width: min(100%, 900px);
+  margin: 4rem auto 0;
+}
+.page-hero .section-eyebrow {
+  margin-bottom: 0.75rem;
+  color: var(--brand-orange, #d97a2b);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.page-hero h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.5rem, 9vw, 4.75rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.page-hero-text {
+  max-width: 700px;
+  margin: 1.25rem auto 0;
+  color: #e3e3e3;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* =========================
+   Shared Section Layout
+========================== */
+
+.services-page-section,
+.why-choose-section {
+  padding: 4.5rem 1.25rem;
+}
+
+.section-inner {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.section-heading .section-eyebrow {
+  margin-bottom: 0.65rem;
+  color: var(--brand-orange, #d97a2b);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #171717;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  line-height: 1.1;
+}
+
+.section-heading p {
+  margin: 1rem auto 0;
+  color: #5f5f5f;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* =========================
+   Service Cards
+========================== */
+
+.services-page-section {
+  background-color: #f5f5f5;
+}
+
+.services-page-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.service-detail-card {
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem 1.75rem;
+
+  border: 1px solid #2d2d2d;
+  border-top: 4px solid var(--brand-orange, #d97a2b);
+  border-radius: 0.5rem;
+
+  background-color: #171717;
+  color: #ffffff;
+
+  box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.14);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.service-detail-card:hover {
+  border-color: var(--brand-orange, #d97a2b);
+
+  box-shadow:
+    0 1.25rem 2.5rem rgba(0, 0, 0, 0.3),
+    0 0 1.25rem rgba(217, 122, 43, 0.2);
+
+  transform: translateY(-0.5rem);
+}
+
+.service-detail-icon {
+  display: block;
+
+  width: 4.75rem;
+  height: 4.75rem;
+
+  margin: 0 auto 1.5rem;
+  padding: 0.05rem;
+
+  border: 2px solid var(--brand-orange, #d97a2b);
+  border-radius: 50%;
+
+  background-color: rgba(217, 122, 43, 0.08);
+
+  object-fit: contain;
+}
+
+.service-detail-card h3 {
+  position: relative;
+
+  margin: 0 0 1.5rem;
+
+  color: #ffffff;
+
+  font-size: 1.45rem;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.service-detail-card h3::after {
+  display: block;
+
+  width: 3rem;
+  height: 0.2rem;
+
+  margin: 0.75rem auto 0;
+
+  border-radius: 999px;
+
+  background-color: var(--brand-orange, #d97a2b);
+
+  content: "";
+}
+
+.service-detail-card p {
+  margin: 0;
+
+  color: #cfcfcf;
+
+  line-height: 1.7;
+}
+
+.service-detail-list {
+  display: grid;
+  gap: 0.75rem;
+
+  margin: 1.5rem 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.service-detail-list li {
+  position: relative;
+
+  padding-left: 1.6rem;
+
+  color: #f2f2f2;
+
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.service-detail-list li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: var(--brand-orange, #d97a2b);
+
+  font-weight: 800;
+
+  content: "✓";
+}
+
+/* Keyboard accessibility */
+
+.service-detail-card:focus-within {
+  border-color: var(--brand-orange, #d97a2b);
+
+  box-shadow:
+    0 1.25rem 2.5rem rgba(0, 0, 0, 0.3),
+    0 0 0 3px rgba(217, 122, 43, 0.25);
+}
+
+/* Reduced-motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .service-detail-card {
+    transition: none;
+  }
+
+  .service-detail-card:hover {
+    transform: none;
+  }
+}
+
+/* =========================
+   Why Choose Penny's
+========================== */
+
+.why-choose-section {
+  background-color: #ffffff;
+}
+
+.why-choose-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.why-choose-card {
+  padding: 1.75rem 1.4rem;
+  border-left: 0.3rem solid var(--brand-orange, #d97a2b);
+  background-color: #171717;
+  color: #ffffff;
+}
+
+.why-choose-symbol {
+  display: inline-grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-bottom: 1rem;
+  place-items: center;
+  border: 2px solid var(--brand-orange, #d97a2b);
+  border-radius: 50%;
+  color: var(--brand-orange, #d97a2b);
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.why-choose-card h3 {
+  margin: 0 0 0.65rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.why-choose-card p {
+  margin: 0;
+  color: #cfcfcf;
+  line-height: 1.6;
+}
+
+/* =========================
+   Services CTA
+========================== */
+
+.services-cta {
+  padding: 4.5rem 1.25rem;
+  background-color: var(--brand-orange, #d97a2b);
+  text-align: center;
+}
+
+.services-cta-inner {
+  width: min(100%, 850px);
+  margin: 0 auto;
+}
+
+.services-cta .section-eyebrow {
+  margin-bottom: 0.75rem;
+  color: #171717;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.services-cta h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2rem, 7vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.services-cta p {
+  max-width: 650px;
+  margin: 1rem auto 0;
+  color: #fff7f0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.services-cta .hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 360px;
+  margin: 1.75rem auto 0;
+}
+
+.services-cta .button {
+  display: inline-flex;
+  min-height: 3.2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.services-cta .button-primary {
+  border: 2px solid #171717;
+  background-color: #171717;
+  color: #ffffff;
+}
+
+.services-cta .button-primary:hover {
+  background-color: #ffffff;
+  color: #171717;
+}
+
+.services-cta .button-outline {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.services-cta .button-outline:hover {
+  background-color: #ffffff;
+  color: #171717;
+}
+
+/* =========================
+   Tablet
+========================== */
+
+@media (min-width: 700px) {
+  .page-hero {
+    padding: 6.5rem 2rem;
+  }
+
+  .services-page-section,
+  .why-choose-section,
+  .services-cta {
+    padding: 5.5rem 2rem;
+  }
+
+  .services-page-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-cta .hero-buttons {
+    flex-direction: row;
+    max-width: none;
+    justify-content: center;
+  }
+
+  .services-cta .button {
+    min-width: 180px;
+  }
+}
+
+/* =========================
+   Desktop
+========================== */
+
+@media (min-width: 1050px) {
+  .page-hero {
+    padding: 8rem 2rem 6rem;
+  }
+
+  .page-hero-inner {
+    margin-top: 4rem;
+  }
+
+  .services-page-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .service-detail-card {
+    padding: 2.25rem 1.6rem;
+  }
+
+  .why-choose-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

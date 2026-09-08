@@ -1,0 +1,467 @@
+/* ========================================
+   GALLERY PAGE — MOBILE FIRST
+======================================== */
+
+
+/* ========================================
+   Gallery Hero
+======================================== */
+
+.gallery-hero {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.78),
+      rgba(0, 0, 0, 0.78)
+    ),
+    url("../images/gallery/front-end-inspection-repair.webp");
+
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.gallery-hero-inner {
+  width: 92%;
+  max-width: 1200px;
+  min-height: 360px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding-top: 150px;
+  padding-bottom: 55px;
+}
+
+.gallery-hero h1 {
+  margin: 0 0 14px;
+  font-size: 2.8rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.gallery-hero p {
+  max-width: 620px;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   Shared Width
+======================================== */
+
+.gallery-section-inner {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   Gallery Introduction
+======================================== */
+
+.gallery-intro {
+  background-color: #f3f0eb;
+  padding: 60px 0 45px;
+}
+
+.gallery-intro h2 {
+  margin: 5px 0 16px;
+  color: #111111;
+  font-size: 2rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.gallery-intro-text {
+  max-width: 720px;
+  margin: 0;
+  color: #3b3b3b;
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   Gallery Grid — Mobile
+======================================== */
+
+.gallery-section {
+  background-color: #111111;
+  padding: 30px 0 70px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.gallery-item,
+.gallery-item-featured,
+.gallery-item-wide {
+  width: 100%;
+  margin: 0;
+
+  grid-column: span 1;
+  grid-row: span 1;
+
+  background-color: #181818;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 100%;
+  overflow: hidden;
+  background-color: #0b0b0b;
+}
+
+.gallery-image img,
+.gallery-item-featured .gallery-image img,
+.gallery-item-wide .gallery-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  transition: transform 0.35s ease;
+}
+
+.gallery-item:hover .gallery-image img,
+.gallery-item:focus-within .gallery-image img {
+  transform: scale(1.02);
+}
+
+.gallery-item figcaption {
+  padding: 18px 18px 20px;
+}
+
+.gallery-category {
+  display: inline-block;
+  margin-bottom: 8px;
+
+  color: #dc7c3e;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.gallery-item h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+
+/* ========================================
+   Gallery Message Section
+======================================== */
+
+.gallery-message-section {
+  background-color: #f3f0eb;
+  padding: 65px 0;
+}
+
+.gallery-message-inner {
+  max-width: 800px;
+}
+
+.gallery-message-inner h2 {
+  margin: 5px 0 18px;
+  color: #111111;
+  font-size: 2rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.gallery-message-inner p:not(.section-eyebrow) {
+  margin: 0 0 28px;
+  color: #3b3b3b;
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   Gallery CTA — Mobile
+======================================== */
+
+.gallery-cta {
+  background-color: #c96f34;
+  color: #ffffff;
+}
+
+.gallery-cta-inner {
+  width: 92%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 55px 0;
+
+  text-align: center;
+}
+
+.gallery-cta .section-eyebrow {
+  margin-bottom: 8px;
+}
+
+.gallery-cta h2 {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.gallery-cta p:not(.section-eyebrow) {
+  max-width: 650px;
+  margin: 0 auto 26px;
+  line-height: 1.6;
+}
+
+.gallery-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.gallery-cta-buttons .button {
+  width: 100%;
+  max-width: 300px;
+  min-width: 0;
+}
+
+/* Text Jason button */
+
+.gallery-cta-buttons .button-primary {
+  background-color: #111111;
+  border: 2px solid #111111;
+  color: #ffffff;
+}
+
+.gallery-cta-buttons .button-primary:hover,
+.gallery-cta-buttons .button-primary:focus {
+  background-color: #000000;
+  border-color: #000000;
+  color: #ffffff;
+}
+
+/* Request a Quote button */
+
+.gallery-cta-buttons .button-outline {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.gallery-cta-buttons .button-outline:hover,
+.gallery-cta-buttons .button-outline:focus {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+
+/* ========================================
+   TABLET — 768px and Up
+======================================== */
+
+@media (min-width: 768px) {
+
+  /* Hero */
+
+  .gallery-hero-inner {
+    min-height: 430px;
+    padding-top: 180px;
+    padding-bottom: 65px;
+  }
+
+  .gallery-hero h1 {
+    font-size: 4rem;
+  }
+
+  .gallery-hero p {
+    font-size: 1.08rem;
+  }
+
+
+  /* Intro */
+
+  .gallery-intro {
+    padding: 75px 0 55px;
+  }
+
+  .gallery-intro h2 {
+    font-size: 2.5rem;
+  }
+
+
+  /* Gallery */
+
+  .gallery-section {
+    padding: 40px 0 85px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .gallery-item,
+  .gallery-item-featured,
+  .gallery-item-wide {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .gallery-image {
+    aspect-ratio: 4 / 5;
+  }
+
+  .gallery-image img,
+  .gallery-item-featured .gallery-image img,
+  .gallery-item-wide .gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  /* Message */
+
+  .gallery-message-section {
+    padding: 80px 0;
+  }
+
+  .gallery-message-inner h2 {
+    font-size: 2.5rem;
+  }
+
+
+  /* CTA */
+
+  .gallery-cta-inner {
+    padding: 65px 0;
+  }
+
+  .gallery-cta h2 {
+    font-size: 2.6rem;
+  }
+
+  .gallery-cta-buttons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .gallery-cta-buttons .button {
+    width: auto;
+    min-width: 180px;
+    max-width: none;
+  }
+}
+
+
+/* ========================================
+   DESKTOP — 1024px and Up
+======================================== */
+
+@media (min-width: 1024px) {
+
+  /* Hero */
+
+  .gallery-hero-inner {
+    min-height: 500px;
+    padding-top: 210px;
+    padding-bottom: 80px;
+  }
+
+  .gallery-hero h1 {
+    font-size: 5rem;
+  }
+
+  .gallery-hero p {
+    font-size: 1.15rem;
+  }
+
+
+  /* Intro */
+
+  .gallery-intro h2 {
+    font-size: 3rem;
+  }
+
+
+  /* Gallery */
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .gallery-item,
+  .gallery-item-featured,
+  .gallery-item-wide {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .gallery-image {
+    aspect-ratio: 4 / 5;
+  }
+
+  .gallery-item figcaption {
+    padding: 20px 20px 22px;
+  }
+
+  .gallery-item h3 {
+    font-size: 1.1rem;
+  }
+
+
+  /* Message */
+
+  .gallery-message-inner h2 {
+    font-size: 3rem;
+  }
+
+
+  /* CTA */
+
+  .gallery-cta-inner {
+    max-width: 900px;
+    padding: 70px 0;
+  }
+
+  .gallery-cta h2 {
+    font-size: 3rem;
+  }
+}
+
+
+/* ========================================
+   XL DESKTOP — 1400px and Up
+======================================== */
+
+@media (min-width: 1400px) {
+
+  .gallery-hero-inner,
+  .gallery-section-inner {
+    max-width: 1320px;
+  }
+
+  .gallery-hero-inner {
+    min-height: 560px;
+  }
+
+  .gallery-hero h1 {
+    font-size: 5.5rem;
+  }
+
+  .gallery-grid {
+    gap: 28px;
+  }
+}

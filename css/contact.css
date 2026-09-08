@@ -1,0 +1,632 @@
+/* ===================================
+   Contact Page
+=================================== */
+
+/* ===================================
+   Contact Hero
+=================================== */
+
+.contact-hero {
+  padding: 10rem 1.25rem 5rem;
+
+  background:
+    linear-gradient(rgba(15, 15, 15, 0.84), rgba(15, 15, 15, 0.92)),
+    url("../images/hero/hero-optimized.webp") center / cover no-repeat;
+
+  text-align: center;
+}
+
+.contact-hero-inner {
+  width: min(100%, 800px);
+  margin: 0 auto;
+}
+
+.contact-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(2.8rem, 10vw, 4.8rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.contact-hero p {
+  max-width: 650px;
+  margin: 1.5rem auto 0;
+
+  color: #e4e4e4;
+
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ===================================
+   Shared Contact Layout
+=================================== */
+
+.contact-section,
+.quote-info-section,
+.contact-expectations-section {
+  padding: 5rem 0;
+}
+
+.contact-section-inner {
+  width: min(1150px, calc(100% - 2.5rem));
+  margin: 0 auto;
+}
+
+.contact-heading {
+  max-width: 760px;
+  margin: 0 auto 3rem;
+
+  text-align: center;
+}
+
+.contact-heading .section-eyebrow,
+.quote-info-section .section-eyebrow,
+.contact-cta .section-eyebrow {
+  margin: 0 0 0.75rem;
+
+  color: var(--brand-orange, #d97a2b);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+
+.contact-heading h2,
+.quote-info-content h2,
+.quote-card h2 {
+  margin: 0;
+
+  color: #171717;
+
+  font-size: clamp(2rem, 7vw, 3rem);
+  line-height: 1.15;
+}
+
+.contact-heading p,
+.quote-info-content p,
+.quote-card p {
+  margin: 1rem 0 0;
+
+  color: #555555;
+
+  line-height: 1.8;
+}
+
+/* ===================================
+   Contact Methods
+=================================== */
+
+.contact-section {
+  background-color: #f4f4f4;
+}
+
+.contact-method-grid {
+  display: grid;
+  gap: 1.5rem;
+
+  justify-content: center;
+}
+
+.contact-card {
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 2rem 1.5rem;
+
+  border: 1px solid #2e2e2e;
+  border-top: 4px solid var(--brand-orange, #d97a2b);
+  border-radius: 0.75rem;
+
+  background-color: #171717;
+  color: #ffffff;
+
+  box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.12);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  border-color: var(--brand-orange, #d97a2b);
+
+  box-shadow:
+    0 1.25rem 2.5rem rgba(0, 0, 0, 0.24),
+    0 0 1.25rem rgba(217, 122, 43, 0.16);
+
+  transform: translateY(-0.45rem);
+}
+
+.contact-card-symbol {
+  display: grid;
+
+  width: 4.25rem;
+  height: 4.25rem;
+
+  margin: 0 auto 1.25rem;
+
+  place-items: center;
+
+  border: 2px solid var(--brand-orange, #d97a2b);
+  border-radius: 50%;
+
+  color: var(--brand-orange, #d97a2b);
+
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+
+.contact-card h3 {
+  margin: 0 0 0.9rem;
+
+  color: #ffffff;
+
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.contact-card p {
+  margin: 0 0 1.5rem;
+
+  color: #d0d0d0;
+
+  line-height: 1.7;
+  text-align: center;
+}
+
+.contact-card .button {
+  display: inline-flex;
+
+  width: 100%;
+  min-height: 3.1rem;
+  margin-top: auto;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid var(--brand-orange, #d97a2b);
+
+  background-color: var(--brand-orange, #d97a2b);
+  color: #ffffff;
+
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact-card .button:hover {
+  background-color: #ffffff;
+  color: #171717;
+}
+
+/* ===================================
+   Availability and Service Area
+=================================== */
+
+.contact-details-strip {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.contact-detail {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2rem 1.75rem;
+
+    border: 1px solid #2e2e2e;
+    border-top: 4px solid var(--brand-orange, #d97a2b);
+    border-radius: .75rem;
+
+    background: #171717;
+    color: #ffffff;
+
+    text-align: center;
+
+    box-shadow: 0 .75rem 1.75rem rgba(0,0,0,.12);
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.contact-detail:hover {
+    border-color: var(--brand-orange, #d97a2b);
+
+    box-shadow:
+        0 1.25rem 2.5rem rgba(0,0,0,.24),
+        0 0 1.25rem rgba(217,122,43,.16);
+
+    transform: translateY(-.45rem);
+}
+
+.contact-detail-symbol {
+    display: grid;
+    place-items: center;
+
+    width: 4.25rem;
+    height: 4.25rem;
+
+    margin-bottom: 1.25rem;
+
+    border: 2px solid var(--brand-orange, #d97a2b);
+    border-radius: 50%;
+
+    color: var(--brand-orange, #d97a2b);
+
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.contact-detail h3 {
+    margin: 0 0 .85rem;
+
+    color: #ffffff;
+
+    font-size: 1.5rem;
+}
+
+.contact-detail p {
+    margin: 0;
+
+    color: #d0d0d0;
+
+    line-height: 1.75;
+}
+
+@media (min-width:768px){
+
+    .contact-details-strip{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* ===================================
+   Quote Information
+=================================== */
+
+.quote-info-section {
+  background-color: #ffffff;
+}
+
+.quote-info-grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.quote-info-content h2 {
+  margin-bottom: 1.25rem;
+}
+
+.quote-detail-list {
+  display: grid;
+  gap: 0.9rem;
+
+  margin: 2rem 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.quote-detail-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+
+  color: #2e2e2e;
+
+  line-height: 1.6;
+}
+
+.quote-detail-list span {
+  flex-shrink: 0;
+
+  color: var(--brand-orange, #d97a2b);
+
+  font-weight: 800;
+}
+
+.quote-card {
+  padding: 2rem 1.5rem;
+
+  border: 1px solid #2d2d2d;
+  border-top: 4px solid var(--brand-orange, #d97a2b);
+  border-radius: 0.75rem;
+
+  background-color: #171717;
+
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.14);
+}
+
+.quote-card h2 {
+  color: #ffffff;
+}
+
+.quote-card p {
+  color: #d0d0d0;
+}
+
+.quote-validity {
+  margin-top: 2rem;
+  padding: 1.25rem;
+
+  border-left: 4px solid var(--brand-orange, #d97a2b);
+
+  background-color: rgba(217, 122, 43, 0.08);
+}
+
+.quote-validity strong {
+  display: block;
+
+  margin-bottom: 0.4rem;
+
+  color: #ffffff;
+
+  font-size: 1.1rem;
+}
+
+.quote-validity span {
+  color: #d3d3d3;
+
+  line-height: 1.6;
+}
+
+/* ===================================
+   Expectations
+=================================== */
+
+.contact-expectations-section {
+  background-color: #171717;
+}
+
+.contact-expectations-section .contact-heading h2 {
+  color: #ffffff;
+}
+
+.contact-expectations-section .contact-heading p {
+  color: #d0d0d0;
+}
+
+.expectations-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.expectation-item {
+  display: grid;
+  gap: 1rem;
+
+  padding: 1.5rem;
+
+  border: 1px solid #303030;
+  border-left: 4px solid var(--brand-orange, #d97a2b);
+  border-radius: 0.5rem;
+
+  background-color: #202020;
+}
+
+.expectation-number {
+  color: var(--brand-orange, #d97a2b);
+
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.expectation-item h3 {
+  margin: 0 0 0.5rem;
+
+  color: #ffffff;
+}
+
+.expectation-item p {
+  margin: 0;
+
+  color: #d2d2d2;
+
+  line-height: 1.7;
+}
+
+/* ===================================
+   Contact CTA
+=================================== */
+
+.contact-cta {
+  padding: 5rem 1.25rem;
+
+  background-color: var(--brand-orange, #d97a2b);
+
+  text-align: center;
+}
+
+.contact-cta-inner {
+  width: min(100%, 760px);
+  margin: 0 auto;
+}
+
+.contact-cta .section-eyebrow {
+  color: #171717;
+}
+
+.contact-cta h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(2rem, 7vw, 3.25rem);
+  line-height: 1.15;
+}
+
+.contact-cta p {
+  max-width: 620px;
+  margin: 1.25rem auto 2rem;
+
+  color: #fff6ef;
+
+  line-height: 1.7;
+}
+
+.contact-cta .button {
+  display: inline-flex;
+
+  min-height: 3.2rem;
+
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  border: 2px solid #171717;
+
+  background-color: #171717;
+  color: #ffffff;
+}
+
+.contact-cta .button:hover {
+  background-color: #ffffff;
+  color: #171717;
+}
+
+/* ===================================
+   Mobile
+=================================== */
+
+@media (max-width: 767px) {
+  .contact-hero {
+    padding: 8.5rem 1.25rem 4rem;
+  }
+
+  .contact-section,
+  .quote-info-section,
+  .contact-expectations-section {
+    padding: 4rem 0;
+  }
+
+  .contact-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-method-grid,
+  .contact-details-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card,
+  .contact-detail,
+  .quote-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .contact-card .button,
+  .contact-cta .button {
+    width: 100%;
+  }
+
+  .contact-detail {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+  }
+
+  .contact-detail-symbol {
+    margin: 0 auto;
+  }
+
+  .expectation-item {
+    grid-template-columns: auto 1fr;
+    align-items: start;
+  }
+}
+
+/* ===================================
+   Tablet
+=================================== */
+
+@media (min-width: 768px) {
+  .contact-hero {
+    padding: 11rem 2rem 5.5rem;
+  }
+
+  .contact-method-grid {
+    grid-template-columns: repeat(3, minmax(220px, 290px));
+    gap: 1.75rem;
+  }
+
+  .contact-details-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quote-info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .expectations-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .expectation-item {
+    display: block;
+  }
+
+  .expectation-number {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+/* ===================================
+   Desktop
+=================================== */
+
+@media (min-width: 1100px) {
+  .contact-hero {
+    padding: 12rem 2rem 6rem;
+  }
+
+  .contact-method-grid {
+    grid-template-columns: repeat(3, 300px);
+    gap: 2rem;
+  }
+
+  .contact-details-strip {
+    max-width: 930px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .quote-info-grid {
+    gap: 4rem;
+  }
+}
+
+/* ===================================
+   Reduced Motion
+=================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-card,
+  .contact-detail {
+    transition: none;
+  }
+
+  .contact-card:hover,
+  .contact-detail:hover {
+    transform: none;
+  }
+}
